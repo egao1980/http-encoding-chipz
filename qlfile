@@ -1,0 +1,6 @@
+ql rove
+ql chipz
+ql salza2
+ql trivial-gray-streams
+# Sibling checkout (CI + local) — avoid qlot github rate limits.
+local http-protocol ../http-protocol
