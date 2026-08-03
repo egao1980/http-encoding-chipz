@@ -1,6 +1,5 @@
+# Legacy local-dev only. CI uses cl-repository → ghcr.io/egao1980/cl-systems.
 ql rove
 ql chipz
 ql salza2
 ql trivial-gray-streams
-# Sibling checkout (CI + local) — avoid qlot github rate limits.
-local http-protocol ../http-protocol
