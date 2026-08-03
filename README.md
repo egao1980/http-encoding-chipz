@@ -10,7 +10,7 @@ MIT. **gzip / deflate** Content-Encoding backend for [`http-protocol`](https://g
 Pattern: [`event-backend-libuv`](https://github.com/egao1980/event-backend-libuv) — specialize protocol generics; no registry.
 
 ```bash
-# siblings: http-protocol/ http-encoding-chipz/
-qlot install
-qlot exec ros -S . -e '(asdf:test-system "http-encoding-chipz")'
+# CI: cl-repository → ghcr.io/egao1980/cl-systems (newest tags)
+# Local: CL_SOURCE_REGISTRY to sibling http-protocol/ or cl-repo install
+ros -l scripts/ci-test.lisp   # needs cl-repository-client on the registry
 ```
