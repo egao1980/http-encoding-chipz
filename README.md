@@ -14,3 +14,14 @@ Pattern: [`event-backend-libuv`](https://github.com/egao1980/event-backend-libuv
 # Local: CL_SOURCE_REGISTRY to sibling http-protocol/ or cl-repo install
 ros -l scripts/ci-test.lisp   # needs cl-repository-client on the registry
 ```
+
+## Publish
+
+Source-only OCI publish is centralized in [`cl-stack-systems`](https://github.com/egao1980/cl-stack-systems)
+(`imports/http-encoding-chipz/qlfile` pin + shared `publish.yml`). Packaging metadata lives in the `.asd`
+(`auto-package-spec`):
+
+```bash
+gh workflow run publish.yml -R egao1980/cl-stack-systems -f import=http-encoding-chipz
+```
+
