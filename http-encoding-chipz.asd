@@ -4,6 +4,7 @@
   :author "egao1980"
   :license "MIT"
   :depends-on ("http-protocol" "chipz" "salza2")
+  :properties (:cl-repo (:ci (:sources (("babel" :ql) ("trivial-features" :ql)))))
   :serial t
   :pathname "src"
   :components ((:file "package")
