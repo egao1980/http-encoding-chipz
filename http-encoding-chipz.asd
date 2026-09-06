@@ -1,9 +1,9 @@
 (defsystem "http-encoding-chipz"
-  :version "0.1.0"
-  :description "gzip/deflate Content-Encoding backend for http-protocol (chipz + salza2)"
+  :version "0.1.1"
+  :description "gzip/deflate Content-Encoding adapter over compression-protocol"
   :author "egao1980"
   :license "MIT"
-  :depends-on ("http-protocol" "chipz" "salza2")
+  :depends-on ("http-protocol" "compression-protocol" "compression-backend-chipz")
 
   :serial t
   :pathname "src"
